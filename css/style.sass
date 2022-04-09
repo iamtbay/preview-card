@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap')
+$brightOrange: hsl(31, 77%, 52%)
+$darkCyan: hsl(184, 100%, 22%)
+$veryDarkCyan: hsl(179, 100%, 13%)
+$paragraphWhite: hsla(0, 0%, 100%, 0.75)
+$veryLGray: hsl(0, 0%, 95%)
+$fontFam: 'Lexend Deca', sans-serif
+$fontTitle: 'Big Shoulders Display', cursive
+*
+    padding: 0
+    margin: 0
+body
+    font-size: 15px
+    font-family: $fontFam
+.container
+    width: 80%
+    margin: auto
+.cardContainer
+    width: 90%
+    display: flex
+    flex-direction: column
+    margin: auto
+    .card
+        color: $paragraphWhite
+        padding: 15% 15%
+        .titleCard
+            font-family: $fontTitle
+            font-size: 1.5rem
+            h2
+                letter-spacing: -1px
+                padding: 12% 0
+        .imageInCard
+            img
+                width: 18%
+        .contentCard
+            .content
+                font-weight: 400
+                letter-spacing: 1.1px
+        .learnMore
+            border: none
+            outline: none
+            border-radius: 20px
+            background-color: $veryLGray
+            font-family: $fontFam
+            font-weight: 600
+            padding: 5% 12%
+            &:hover
+                cursor: pointer
+                background-color: #ffffff00
+                color: $veryLGray !important
+                border: 1px solid $veryLGray 
+    #sedans
+        background-color: $brightOrange
+       
+        .learnMore
+            color: $brightOrange
+    #suvs
+        background-color: $darkCyan
+        .learnMore
+            color: $darkCyan
+    #luxury
+        background-color: $veryDarkCyan
+        
+        .learnMore
+            color: $veryDarkCyan
+@media (max-width:416px) 
+    #sedans
+        border-top-left-radius: 10px
+        border-top-right-radius: 10px
+    #luxury
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+    .learnMore
+        margin-top: 5%
+@media (min-width:417px)
+    .container
+        height: 100vh
+        display: flex
+        margin: auto
+    .cardContainer
+        width: 100%
+        display: flex
+        flex-direction: row
+        align-self: center
+        .card
+            color: $paragraphWhite
+            padding: 5% 5%
+            .titleCard
+                font-family: $fontTitle
+                font-size: 2rem
+                h2
+                    letter-spacing: -1px
+            .imageInCard
+                img
+                    width: 25%
+            .contentCard
+                .content
+                    font-weight: 200
+                    letter-spacing: 1.1px
+                    line-height: 150%
+                    font-size: 1.2rem
+            .learnMore
+                border: none
+                outline: none
+                border-radius: 30px
+                background-color: $veryLGray
+                font-family: $fontFam
+                font-weight: 600
+                padding: 5% 12%
+                font-size: 1.3rem
+                margin-top: 25%
+        #sedans
+            background-color: $brightOrange
+            border-bottom-left-radius: 10px
+            border-top-left-radius: 10px
+           
+            .learnMore
+                color: $brightOrange
+        #suvs
+            background-color: $darkCyan
+            .learnMore
+                color: $darkCyan
+        #luxury
+            background-color: $veryDarkCyan
+            border-top-right-radius: 10px
+            border-bottom-right-radius: 10px
+            .learnMore
+                color: $veryDarkCyan
